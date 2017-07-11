@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://s3.amazonaws.com/stitch-sdks/js/library/stable/stitch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.min.js"></script>
+        <script src="/comments.js"></script>
+        <script>
+         function onLoadHandler() {
+             comments = new Comments('mdbw17s1-poiib', 'mongodb-atlas', 'comments');
+             comments.displayComments();
+         }
+        </script>
+    </head>
+    <body onLoad="onLoadHandler()">
+        <h3>This is a great blog post</h3>
+        <div id="content">
+            I like to write about technology. Because I want to get on the front page of hacker news.
+        </div>
+        <hr>
+        <div id="comments"></div>
+    </body>
+</html>

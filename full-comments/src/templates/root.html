@@ -1,0 +1,9 @@
+<div id="comments_section">
+    {{#each comments}}
+    <div>{{comment}}</div>
+    {{/each}}
+</div>
+<hr>
+<div>
+    Add a Comment: <input id="new_comment"><input type="submit" onClick="comments.addComment()">
+</div>
